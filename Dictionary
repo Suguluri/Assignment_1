@@ -1,0 +1,3 @@
+ascii_dict = {chr(i): i for i in range(ord('a'), ord('z') + 1)}
+for key, value in ascii_dict.items():
+    print(f"{key}: {value}")
