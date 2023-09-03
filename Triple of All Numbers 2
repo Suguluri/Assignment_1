@@ -1,0 +1,8 @@
+def triple(x):
+    return x * 3
+input_str = input("Enter a list of integers separated by spaces: ")
+input_list = input_str.split()
+numbers = [int(num) for num in input_list]
+tripled_numbers = list(map(triple, numbers))
+print("Tripled numbers:", tripled_numbers)
+
