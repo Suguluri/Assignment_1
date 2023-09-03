@@ -1,0 +1,10 @@
+def triple_number(x):
+    return 3 * x
+try:
+    input_numbers = input("Enter a list of integers separated by spaces: ")
+    numbers = list(map(int, input_numbers.split()))
+    tripled_numbers = list(map(triple_number, numbers))
+    print("Original numbers:", numbers)
+    print("Tripled numbers:", tripled_numbers)
+except ValueError:
+    print("Invalid input. Please enter a list of integers separated by spaces.")
