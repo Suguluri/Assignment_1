@@ -1,0 +1,4 @@
+add_25 = lambda x: x + 25
+num = float(input("Enter a number: "))
+result = int(add_25(num))
+print(f"The result of adding 25 to {num} is {result}")
