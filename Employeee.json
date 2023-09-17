@@ -1,0 +1,37 @@
+[
+    {
+        "Name": "sirisha suguluri",
+        "DOB": "1998-02-16",
+        "Height": 162.0,
+        "City": "Vijayawada",
+        "State": "Andhra Pradesh"
+    },
+    {
+        "Name": "sandhya",
+        "DOB": "1996-04-20",
+        "Height": 165.0,
+        "City": "Guntur",
+        "State": "Andhra Pradesh"
+    },
+    {
+        "Name": "Sunitha",
+        "DOB": "2000-05-13",
+        "Height": 160.0,
+        "City": "Vizag",
+        "State": "Andhra Pradesh"
+    },
+    {
+        "Name": "Divya",
+        "DOB": "1990-01-23",
+        "Height": 165.0,
+        "City": "Bhel",
+        "State": "Hyderabad"
+    },
+    {
+        "Name": "Ramesh",
+        "DOB": "1975-06-27",
+        "Height": 170.0,
+        "City": "Guntur",
+        "State": "Andhra Pradesh"
+    }
+]
