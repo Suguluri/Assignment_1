@@ -1,0 +1,48 @@
+Data Types:
+
+1.What are primitive data types in programming?
+2.Explain the difference between int and float data types.
+3.What is the difference between a value type and a reference type?
+4.What is the role of the boolean data type?
+5.Describe the string data type and its characteristics.
+6.What are arrays and why are they used in programming?
+7.Explain the concept of a data structure.
+8.What is the difference between a stack and a queue?
+
+
+Operators:
+
+1.Explain the difference between the logical AND and logical OR operators.
+2.What is the ternary operator? Provide an example.
+3.Describe the difference between == and === operators in programming.
+4.Explain the concept of operator precedence.
+5.What are bitwise operators and when are they used?
+6.Discuss the difference between prefix and postfix increment operators.
+
+
+Conditional Statements:
+
+1.What is an if-else statement and how does it work?
+2.Explain the switch statement and provide an example of its usage.
+3.What is the purpose of the "else if" statement?
+4.How does the short-circuiting behavior work in logical expressions?
+5.Explain the concept of nested if statements.
+6.What is the importance of a default case in a switch statement?
+
+
+Looping Statements:
+
+1.What is the difference between a while loop and a for loop?
+2.Explain the concept of an infinite loop and how to avoid it.
+3.What is the purpose of the "break" statement in loops?
+4.Describe the "continue" statement and its use in loops.
+5.How does a do-while loop differ from a while loop?
+
+
+Functions:
+
+1.What is a function and why is it used in programming?
+2.Explain the difference between parameters and arguments in a function.
+3.What is the significance of the return statement in a function?
+4.Describe the concept of function overloading.
+5.What is recursion and how is it useful in programming?
