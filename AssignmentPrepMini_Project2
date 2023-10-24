@@ -1,0 +1,57 @@
+import random
+
+class QuizMaker:
+    def __init__(self, filename):
+        self.questions = self.read_questions(filename)
+
+    def read_questions(self, filename):
+        with open(filename, 'r') as file:
+            lines = file.readlines()
+
+        questions = []
+        current_question = None
+        for line in lines:
+            line = line.strip()
+            if line.startswith("Q:"):
+                current_question = {"question": line[2:], "options": [], "answer": ""}
+            elif line.startswith("A:"):
+                current_question["answer"] = line[2:]
+                questions.append(current_question)
+            elif line.startswith("O:"):
+                current_question["options"].append(line[2:])
+        return questions
+
+    def generate_quiz(self, num_questions):
+        quiz = random.sample(self.questions, num_questions)
+        return quiz
+
+    def grade_quiz(self, quiz, answers):
+        score = 0
+        for i, question in enumerate(quiz):
+            if question["answer"] == answers[i]:
+                score += 1
+        return score
+
+
+if __name__ == "__main__":
+    
+    quiz_maker = QuizMaker("questions.txt")
+
+    
+    quiz = quiz_maker.generate_quiz(3)
+
+   
+    print("Quiz Questions:")
+    for i, question in enumerate(quiz, start=1):
+        print(f"{i}. {question['question']}")
+        for j, option in enumerate(question['options'], start=1):
+            print(f"   {j}. {option}")
+
+    student_answers = []
+    for i in range(len(quiz)):
+        answer = input(f"Enter your answer for question {i + 1}: ")
+        student_answers.append(answer)
+
+    
+    score = quiz_maker.grade_quiz(quiz, student_answers)
+    print(f"Your Score: {score}/{len(quiz)}")

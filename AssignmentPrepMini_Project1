@@ -1,0 +1,24 @@
+import re
+
+def regex_query_tool():
+    
+    source_text = input("Enter the source text: ")
+    regex_pattern = input("Enter the regex pattern: ")
+
+    try:
+        
+        regex = re.compile(regex_pattern)
+        
+       
+        matches = regex.findall(source_text)
+        
+       
+        print("Matches found:")
+        for match in matches:
+            print(match)
+    except re.error as e:
+        
+        print("Error in regex pattern:", e)
+
+
+regex_query_tool()
